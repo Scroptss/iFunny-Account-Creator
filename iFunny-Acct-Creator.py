@@ -134,8 +134,6 @@ async def login_and_save_info(email, password, basic, index):
 
 # Where the magic happens :)
 async def main_loop():
-
-    assert(nickbase,emailbase,password), "Nickbase, emailbase, and password cannot be empty"
     
     data = load_json_file()
     index = int(data['index'])
